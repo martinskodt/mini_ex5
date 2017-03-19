@@ -1,7 +1,7 @@
 # mini_ex5
 
 ## [Bouncing Balls](https://martinskodt.github.io/mini_ex5/generative%20bouncing%20ball/)
-![Screenshot](https://github.com/martinskodt/mini_ex5/blob/gh-pages/mini_ex6%20bouncing%20balls.png)
+![Screenshot](https://github.com/martinskodt/mini_ex5/blob/gh-pages/mini_ex6%20screenshot.png)
 
 ### Rules of my program
 Rule 1: balls have bounce of the sides.
