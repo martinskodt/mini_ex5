@@ -3,6 +3,7 @@ var distance = 0;
 var dirx = 0;
 var diry = 0;
 var antal = 10;
+var nr = 10
 						//Ball objekt (constructor funktion)
 function Balls(x,y){
 this.x = x;
@@ -67,6 +68,7 @@ ellipse(this.x,this.y,this.size,this.size)
 }						//tilføj bold når man trykker på knap
 function addball(){
 balls.push(new Balls(100,100)); 
+nr = nr +1
 }	
 
 function setup() {
@@ -84,13 +86,18 @@ balls[i] = new Balls(random(25,975),random(25,975));
 						// skab knap
 var button;
 button = createButton("Add Ball")
-button.position(10,10);
+button.position(10,75);
 button.mousePressed(addball);
+	
 }
 
 function draw() {
-background(0,30)
-console.log(antal)
+background(0,100)
+						//tekst
+fill(255)
+textSize(25)
+text("Balls",10,30)
+text(nr,25,60)
 						//sæt funktionerne igang for hver bold
 for (var i = 0; i<(balls.length); i++){
 	
