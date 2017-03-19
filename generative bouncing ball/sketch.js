@@ -67,12 +67,12 @@ ellipse(this.x,this.y,this.size,this.size)
   }
 }						//tilføj bold når man trykker på knap
 function addball(){
-balls.push(new Balls(100,100)); 
+balls.push(new Balls(random((width/2)-225,(width/2)+225), random(25,225)));
 nr = nr +1
 }	
 
 function setup() {
-createCanvas(1000,1000)
+createCanvas(window.innerWidth,window.innerHeight)
   frameRate(60)
 
  dirx = random(1,-1)
